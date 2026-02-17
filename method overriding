@@ -1,7 +1,7 @@
 class vehicle:
     def move (self):
         print("vehicle is moving")
-        class car(vehicle):
+class car(vehicle):
             def move(self):
              print("driving on the road")
 

@@ -1,0 +1,18 @@
+import csv
+
+with open('students.csv','w',newline="")as file:
+    writer=csv.writer(file)
+    
+    writer.writerow(["Name","roll no","branch","marks"])
+    
+    n=int(input("enter no. of students:"))
+    
+    for i in range(n):
+        print(f"\nenter details of student{i+1}:")
+        
+        name=input("Name:")
+        roll=input("roll no:")
+        branch=input("branch:")
+        marks=input("marks:")
+        
+        writer.writerow([name,roll,branch,marks])

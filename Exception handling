@@ -1,0 +1,14 @@
+filename = input("enter the filename to open")
+
+try:
+    file=open(filename,'r')
+    content=file.read()
+    print("\nfile operationsuccessfully file content:\n")
+    print(content)
+    file.close()
+    
+except FileNotFoundError:
+    print("Error:The file does not exist")
+    
+except PermissionError:
+    print("Error: you do not have permission to read this")
